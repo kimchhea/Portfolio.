@@ -1,0 +1,303 @@
+:root {
+  --main-color: #010326;
+  --main-text: #747f8c;
+  --bg-color: #262521;
+  --primary-btn: #a4a29d;
+  --primary-btn-hover: #595856;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.primary-button {
+  background-color: var(--primary-btn);
+  color: var(--main-text);
+  transition: all 0.4s ease;
+}
+.primary-button:hover {
+  background-color: var(--primary-btn-hover);
+  color: var(--main-color);
+}
+/* ======nav-bar========= */
+header {
+  font-family: "Roboto Mono", monospace;
+  position: sticky;
+  top: 0px;
+  z-index: 11;
+  background: #000;
+}
+
+header nav .container {
+  background: var(--main-color);
+}
+header nav .container a {
+  color: aliceblue;
+}
+.container-fluid .card-img {
+  height: 700px !important;
+  position: relative;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.main-color {
+  background: var(--main-color);
+}
+ul li a:hover{
+  color: var(--primary-btn)!important;
+}
+ul li a:focus{
+  color: var(--primary-btn)!important;
+}
+ul li a:{
+  color: var(--primary-btn)!important;
+}
+/* /////////////////////////////// */
+.container-fluid .col-12 .card-text {
+  position: absolute;
+  top: 300px;
+  height: auto;
+  left: 200px;
+}
+.main-concept .card-text h1 {
+  font-size: 7rem;
+  font-weight: bold;
+  color: #e6e6fa !important;
+  line-height: 1; /* Reduce spacing between lines */
+  font-family: "Geist Mono", monospace !important;
+}
+.main-concept .card-text h2 {
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 0.7; /* Reduce spacing between lines */
+  color: #e6e6fa !important;
+  font-family: "Geist Mono", monospace !important;
+}
+.card-text span {
+  font-size: 3rem;
+  font-weight: light;
+  color: #c9c9f6 !important;
+  padding-left: 5px !important;
+  font-family: "Geist Mono", monospace;
+}
+.container-fluid .col-12 .card-text .social-media a i {
+  height: auto;
+  font-weight: lighter;
+  color: #e6e6fa !important;
+}
+.container-fluid .col-12 .card-text .social-media a i:hover {
+  border-color: #e6e6fa;
+  color: #76ead7 !important;
+}
+.mt-end {
+  position: absolute;
+  left: 10px;
+  bottom: -160px !important;
+}
+.card-text .button-main button {
+  background: var(--main-color) !important;
+  border: 5px solid var(--main-color) !important;
+  border-radius: 10px;
+  transition: 0.5;
+  border: 3px solid rgb(255, 255, 255);
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em;
+  color: rgb(210, 203, 203);
+}
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+  color: aliceblue !important;
+}
+.ff {
+  font-family: "Geist Mono", monospace !important;
+  color: aliceblue;
+}
+.button-main button:hover {
+  color: aliceblue;
+  font-weight: bold;
+  transition: color 0.2s ease, font-weight 0.2s ease;
+}
+/* --------section two about me-------- */
+.text-aboutme {
+  padding-left: 50px;
+  text-align: justify;
+}
+.about-me .card-imgs img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.about-me .col-7 {
+  color: rgba(255, 253, 253, 0.8); /* Brighter text */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.red {
+  background-color: #ff0400;
+}
+
+.yellow {
+  background-color: #ffa600;
+}
+
+.green {
+  background-color: #00ff62;
+}
+.text-green {
+  color: #00ff62;
+}
+.text-yellow {
+  color: #ffa600;
+}
+.text-red {
+  color: #ff0400;
+}
+.about-me .box {
+  width: 50px;
+  height: 50px;
+  padding: 1px;
+  border-radius: 50%;
+}
+.icon-dot {
+  position: absolute;
+  display: flex;
+  gap: 5px;
+  top: 40px;
+  right: 50px;
+}
+.about-me .card-imgs img {
+  width: 100%;
+  height: 99%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+/* --------My skill----- */
+.my-skill .skills {
+  color: rgba(255, 253, 253, 0.637); /* Brighter text */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border: 1px solid var(--main-text);
+  font-weight: 500;
+  line-height: 1.5;
+  box-shadow: rgba(255, 255, 255, 0.589) 0px 1px 4px,
+    rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.fs-icon {
+  font-size: 80px !important;
+  position: absolute;
+  z-index: 100;
+  top: -50px;
+}
+.bg-box {
+  background-color: var(--main-color) !important;
+  color: var(--primary-btn);
+  text-align: justify !important;
+}
+.my-skills hr {
+  height: 5px !important;
+}
+/* -----my skill------ */
+.SKILL .col-4 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+  border: 2px solid seashell;
+}
+.SKILL .card-skill {
+  color: rgba(255, 253, 253, 0.8); /* Brighter text */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+/* --progress bar---- */
+
+.progress-bar {
+  background-color: #00ff62 !important;
+  height: 100%;
+  width: 0;
+  transition: width 4s ease-in-out;
+}
+/* ----my work---- */
+.PROJECT .col-4 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+}
+.PROJECT .col-3 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+}
+.PROJECT .col-12 img {
+  width: 100% !important;
+  height: 500px !important;
+  object-fit: fill !important;
+}
+
+.border-img-work {
+  border: 2px ridge #ffa600;
+  border-radius: 5px;
+}
+/* ---footer-- */
+footer .card {
+  color: rgba(255, 253, 253, 0.8); /* Brighter text */
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.5)
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  line-height: 1.5;
+}
+.icon-dev {
+  width: 50px !important;
+  height: 50px !important;
+
+  border-radius: 50%;
+}
+footer .dot {
+  position: relative;
+  margin-left: -10px !important;
+}
